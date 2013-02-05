@@ -14,6 +14,8 @@
 		BD4D72ED16BF90E5007106B5 /* ABDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4D72EC16BF90E5007106B5 /* ABDocument.m */; };
 		BD4D72F016BF90E5007106B5 /* ABDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD4D72EE16BF90E5007106B5 /* ABDocument.xib */; };
 		BD4D72F316BF90E6007106B5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD4D72F116BF90E6007106B5 /* MainMenu.xib */; };
+		BD4D72FC16BF947F007106B5 /* NSString+ABKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4D72FB16BF947F007106B5 /* NSString+ABKit.m */; };
+		BD4D72FF16BF955F007106B5 /* ABKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4D72FE16BF955F007106B5 /* ABKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		BD4D72EC16BF90E5007106B5 /* ABDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABDocument.m; sourceTree = "<group>"; };
 		BD4D72EF16BF90E5007106B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ABDocument.xib; sourceTree = "<group>"; };
 		BD4D72F216BF90E6007106B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BD4D72FA16BF947F007106B5 /* NSString+ABKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ABKit.h"; sourceTree = "<group>"; };
+		BD4D72FB16BF947F007106B5 /* NSString+ABKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ABKit.m"; sourceTree = "<group>"; };
+		BD4D72FD16BF955F007106B5 /* ABKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABKit.h; sourceTree = "<group>"; };
+		BD4D72FE16BF955F007106B5 /* ABKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,13 +102,25 @@
 		BD4D72E016BF90E5007106B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD4D72F916BF9353007106B5 /* ABKitCategories */,
 				BD4D72E116BF90E5007106B5 /* ABKit-Info.plist */,
 				BD4D72E216BF90E5007106B5 /* InfoPlist.strings */,
 				BD4D72E516BF90E5007106B5 /* main.m */,
 				BD4D72E716BF90E5007106B5 /* ABKit-Prefix.pch */,
 				BD4D72E816BF90E5007106B5 /* Credits.rtf */,
+				BD4D72FD16BF955F007106B5 /* ABKit.h */,
+				BD4D72FE16BF955F007106B5 /* ABKit.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD4D72F916BF9353007106B5 /* ABKitCategories */ = {
+			isa = PBXGroup;
+			children = (
+				BD4D72FA16BF947F007106B5 /* NSString+ABKit.h */,
+				BD4D72FB16BF947F007106B5 /* NSString+ABKit.m */,
+			);
+			name = ABKitCategories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +191,8 @@
 			files = (
 				BD4D72E616BF90E5007106B5 /* main.m in Sources */,
 				BD4D72ED16BF90E5007106B5 /* ABDocument.m in Sources */,
+				BD4D72FC16BF947F007106B5 /* NSString+ABKit.m in Sources */,
+				BD4D72FF16BF955F007106B5 /* ABKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
